@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل التطبيق - MOTAPP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>تفاصيل التطبيق</h1></header>
+  <main>
+    <img src="app1.png" alt="صورة التطبيق" style="max-width: 150px;">
+    <table>
+      <tr><td>الحجم</td><td>25MB</td></tr>
+      <tr><td>الإصدار</td><td>1.0.0</td></tr>
+      <tr><td>التقييم</td><td>⭐⭐⭐⭐☆</td></tr>
+    </table>
+    <div id="countdown">انتظر 5 ثوانٍ لتحميل التطبيق...</div>
+    <a href="https://example.com/app.apk" id="download-btn" style="display:none;" class="btn">تحميل التطبيق</a>
+    <button onclick="navigator.share({ title: 'MOTAPP', url: window.location.href })">مشاركة</button>
+  </main>
+  <script>
+    let counter = 5;
+    const countdown = document.getElementById("countdown");
+    const btn = document.getElementById("download-btn");
+    const interval = setInterval(() => {
+      counter--;
+      countdown.textContent = "انتظر " + counter + " ثوانٍ لتحميل التطبيق...";
+      if (counter === 0) {
+        clearInterval(interval);
+        countdown.style.display = "none";
+        btn.style.display = "inline-block";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
