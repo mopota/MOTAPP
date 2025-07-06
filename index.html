@@ -1,44 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOTAPP - متجر التطبيقات</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTAPP - متجر التطبيقات</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>MOTAPP</h1>
-    <input type="text" id="search" placeholder="ابحث عن تطبيق...">
-    <button id="mode-toggle">تبديل الوضع</button>
-  </header>
-  <section class="banner">
+<header class="main-header">
+    <div class="logo">
+        <img src="icon.png" alt="MOTAPP Logo" style="height:40px;width:40px;vertical-align:middle;margin-left:10px;">
+        <span>MOTAPP</span>
+    </div>
+    <nav class="nav-bar">
+        <a href="#apps">الرئيسية</a>
+        <a href="#about">عن الموقع</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+        <input type="text" id="search" placeholder="ابحث عن تطبيق...">
+        <button id="mode-toggle" title="تبديل الوضع">
+            <img id="mode-icon" src="images/light_mode_white.png" alt="تبديل الوضع" style="width:28px;height:28px;vertical-align:middle;">
+        </button>
+    </div>
+</header>
+<section class="banner">
     <h2>أفضل التطبيقات المجانية في مكان واحد!</h2>
-  </section>
-  <main id="apps">
+</section>
+<main id="apps">
     <div class="card">
-      <img src="app1.png" alt="App 1">
-      <h2>تطبيق واتساب الذهبي</h2>
-      <p>نسخة معدلة من واتساب بمميزات إضافية.</p>
-      <a href="app.html" class="btn">تفاصيل</a>
+        <img src="app1.png" alt="App 1">
+        <h2>تطبيق واتساب الذهبي</h2>
+        <p>نسخة معدلة من واتساب بمميزات إضافية.</p>
+        <a href="app.html" class="btn">تفاصيل</a>
     </div>
     <div class="card">
-      <img src="app2.png" alt="App 2">
-      <h2>تطبيق كتكوتي للأطفال</h2>
-      <p>تطبيق تعليمي للأطفال باللغة العربية.</p>
-      <a href="app.html" class="btn">تفاصيل</a>
+        <img src="app2.png" alt="App 2">
+        <h2>تطبيق كتكوتي للأطفال</h2>
+        <p>تطبيق تعليمي للأطفال باللغة العربية.</p>
+        <a href="app.html" class="btn">تفاصيل</a>
     </div>
     <div class="card">
-      <img src="app3.png" alt="App 3">
-      <h2>تطبيق VPN سريع</h2>
-      <p>اتصل بالإنترنت بأمان وسرعة عالية.</p>
-      <a href="app.html" class="btn">تفاصيل</a>
+        <img src="app3.png" alt="App 3">
+        <h2>تطبيق VPN سريع</h2>
+        <p>اتصل بالإنترنت بأمان وسرعة عالية.</p>
+        <a href="app.html" class="btn">تفاصيل</a>
     </div>
-  </main>
-  <footer>
-    <p>© 2025 MOTAPP - تصميم شهد</p>
-  </footer>
-  <script src="script.js"></script>
+</main>
+<footer>
+    <p>© 2025 MOTAPP - تصميم </p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
